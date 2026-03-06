@@ -18,3 +18,7 @@ How it Works
 1. User enters pollution level
 2. System analyzes the data
 3. Recommended plants are displayed
+
+Contributors:
+Bhavna Sharma 
+Arpita Singh
