@@ -9,10 +9,12 @@ Features
 - Easy interface
 
 Technologies Used
-- Python
-- Machine Learning
-- HTML
-- CSS
+-HTML, CSS, JavaScript
+-React (Frontend)
+-Flask (Backend)
+-Machine Learning (Image & Data Analysis)
+-AQI / Pollution Dataset
+-Figma (UI/UX Design)
 
 How it Works
 1. User enters pollution level
