@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+# PlantWise - Pollution-Aware Plant Recommendation System
 
-## Project info
+## Project Description
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+PlantWise is an intelligent system that recommends pollution-controlling plants based on real-time air quality data. The application helps users make informed decisions about which plants to grow based on their local environmental conditions.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Real-time Air Quality Detection** - Automatically detects user location and fetches current AQI data
+- **Smart Plant Recommendations** - Suggests plants based on pollution levels and environmental conditions
+- **User Authentication** - Secure login and signup functionality
+- **Interactive Dashboard** - Visual representation of air quality data and plant insights
+- **Search History** - Track and view past air quality searches
+- **Saved Plants** - Build a personal collection of recommended plants
+- **Community Features** - Connect with other plant enthusiasts
+- **Image Analysis** - Upload images of your space for personalized recommendations
 
-**Use Lovable**
+## Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Frontend**: React 18.3.1 with TypeScript
+- **Build Tool**: Vite 5.4.19
+- **Styling**: TailwindCSS with shadcn/ui components
+- **Backend**: Supabase (database + serverless functions)
+- **State Management**: React Query (TanStack Query)
+- **Routing**: React Router DOM
+- **Authentication**: Supabase Auth
+- **UI Components**: Radix UI primitives with shadcn/ui
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v18 or higher)
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd green-bloom-guide-main
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/          # Reusable UI components
+│   ├── auth/           # Authentication components
+│   ├── home/           # Landing page components
+│   ├── layout/         # Layout components (Navbar, Footer)
+│   ├── plants/         # Plant-related components
+│   ├── pollution/      # Air quality components
+│   └── ui/             # shadcn/ui components
+├── hooks/              # Custom React hooks
+├── integrations/       # External service integrations
+├── lib/                # Utility functions
+├── pages/              # Page components
+└── main.tsx           # Application entry point
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Environment Variables
 
-## What technologies are used for this project?
+Create a `.env` file in the root directory:
 
-This project is built with:
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+VITE_SUPABASE_PROJECT_ID=your_supabase_project_id
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Available Scripts
 
-## How can I deploy this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## How It Works
 
-## Can I connect a custom domain to my Lovable project?
+1. **Location Detection**: The app automatically detects the user's location using browser geolocation
+2. **Air Quality Analysis**: Fetches real-time air quality data from external APIs
+3. **Plant Recommendations**: Based on pollution levels, the system suggests suitable plants
+4. **Personalization**: Users can save plants, track search history, and get personalized recommendations
 
-Yes, you can!
+## Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Commit and push to the branch
+5. Open a pull request
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

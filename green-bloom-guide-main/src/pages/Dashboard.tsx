@@ -133,7 +133,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="container mx-auto px-4 pt-24 pb-16 relative overflow-hidden">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 lg:pt-28 pb-16 relative overflow-hidden">
         {/* Decorative floating blobs */}
         <FloatingBlob className="absolute top-32 right-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl pointer-events-none" delay={0} />
         <FloatingBlob className="absolute top-96 left-0 w-48 h-48 rounded-full bg-sun/5 blur-3xl pointer-events-none" delay={2} />
@@ -242,7 +242,7 @@ const Dashboard = () => {
           </AnimatePresence>
 
           {/* ── Main Grid ── */}
-          <div className="grid lg:grid-cols-5 gap-8">
+          <div className="grid lg:grid-cols-5 gap-6 lg:gap-8">
             {/* Left: inputs */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}

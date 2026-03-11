@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border/40 shadow-sm">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <motion.div
@@ -93,7 +93,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-b border-border bg-background/95 backdrop-blur-md"
+            className="md:hidden border-b border-border/40 bg-background/95 backdrop-blur-lg shadow-lg"
           >
             <div className="px-4 py-3 space-y-1">
               {navLinks.map(link => {

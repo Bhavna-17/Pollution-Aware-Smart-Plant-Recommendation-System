@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border bg-card/50 py-12 relative overflow-hidden">
+    <footer className="border-t border-border bg-card/50 py-8 md:py-12 relative overflow-hidden">
       {/* Subtle blob */}
       <motion.div
         animate={{ y: [0, -6, 0] }}
@@ -20,7 +20,7 @@ const Footer = () => {
             <span className="font-display text-sm font-bold text-foreground">PlantWise</span>
           </motion.div>
 
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm text-muted-foreground">
             {[
               { to: '/', label: 'Home', emoji: '🏡' },
               { to: '/dashboard', label: 'Dashboard', emoji: '📊' },

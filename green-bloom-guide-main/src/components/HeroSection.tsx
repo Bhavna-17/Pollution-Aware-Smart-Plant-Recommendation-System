@@ -15,7 +15,7 @@ const FloatingEmoji = ({ emoji, className, delay = 0, duration = 4 }: { emoji: s
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[92vh] lg:min-h-screen flex items-center overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="Lush green garden" className="w-full h-full object-cover" />
@@ -44,7 +44,7 @@ const HeroSection = () => {
       <FloatingEmoji emoji="💚" className="top-[30%] right-[30%] text-lg opacity-15" delay={0.8} duration={3.5} />
       <FloatingEmoji emoji="🍃" className="top-20 left-[45%] text-2xl opacity-10" delay={3} duration={6} />
 
-      <div className="container mx-auto px-4 relative z-10 pt-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 lg:pt-24">
         <div className="max-w-3xl mx-auto text-center">
           {/* Cute floating icon badges */}
           <div className="flex justify-center gap-4 mb-8">
