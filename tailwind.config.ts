@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Nunito', 'sans-serif'],
-        display: ['Quicksand', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['DM Sans', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,37 +61,31 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom eco colors
         sage: {
           DEFAULT: "hsl(var(--sage))",
           light: "hsl(var(--sage-light))",
-          muted: "hsl(var(--sage-muted))",
         },
-        mint: {
-          DEFAULT: "hsl(var(--mint))",
-          light: "hsl(var(--mint-light))",
-        },
-        beige: {
-          DEFAULT: "hsl(var(--beige))",
-          warm: "hsl(var(--beige-warm))",
-        },
-        cream: "hsl(var(--cream))",
         earth: {
           DEFAULT: "hsl(var(--earth))",
           light: "hsl(var(--earth-light))",
         },
-        sunlight: {
-          DEFAULT: "hsl(var(--sunlight))",
-          soft: "hsl(var(--sunlight-soft))",
+        cream: "hsl(var(--cream))",
+        leaf: {
+          DEFAULT: "hsl(var(--leaf))",
+          light: "hsl(var(--leaf-light))",
         },
+        sun: {
+          DEFAULT: "hsl(var(--sun))",
+          light: "hsl(var(--sun-light))",
+        },
+        sky: "hsl(var(--sky))",
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-        xl: "calc(var(--radius) + 4px)",
-        "2xl": "calc(var(--radius) + 8px)",
-        "3xl": "calc(var(--radius) + 16px)",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
       },
       keyframes: {
         "accordion-down": {
@@ -102,41 +96,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "fade-in": {
-          "0%": { opacity: "0", transform: "translateY(10px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        "fade-in-up": {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        "slide-in-right": {
-          "0%": { transform: "translateX(100%)", opacity: "0" },
-          "100%": { transform: "translateX(0)", opacity: "1" },
-        },
-        "scale-in": {
-          "0%": { transform: "scale(0.9)", opacity: "0" },
-          "100%": { transform: "scale(1)", opacity: "1" },
-        },
-        "bounce-soft": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-5px)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out forwards",
-        "fade-in-up": "fade-in-up 0.6s ease-out forwards",
-        "slide-in-right": "slide-in-right 0.4s ease-out forwards",
-        "scale-in": "scale-in 0.3s ease-out forwards",
-        "bounce-soft": "bounce-soft 2s ease-in-out infinite",
-      },
-      boxShadow: {
-        'eco': 'var(--shadow-soft)',
-        'eco-card': 'var(--shadow-card)',
-        'eco-hover': 'var(--shadow-hover)',
-        'eco-glow': 'var(--shadow-glow)',
       },
     },
   },

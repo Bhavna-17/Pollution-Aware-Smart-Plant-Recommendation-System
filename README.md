@@ -105,7 +105,3 @@ VITE_SUPABASE_PROJECT_ID=your_supabase_project_id
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## Contributors
-Bhavna Sharma 
-Arpita Singh
